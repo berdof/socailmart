@@ -342,6 +342,8 @@ h3 { font-weight: 700; font-size: 13px; padding: 0 0 14px 0; }
 .column-filter span.cuselActive { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cff3c6), color-stop(100%, #e3f6e7)); background-image: -webkit-linear-gradient(top, #cff3c6, #e3f6e7); background-image: -moz-linear-gradient(top, #cff3c6, #e3f6e7); background-image: -o-linear-gradient(top, #cff3c6, #e3f6e7); background-image: linear-gradient(top, #cff3c6, #e3f6e7); -pie-background: linear-gradient(top, #cff3c6, #e3f6e7); background-image: -ms-linear-gradient(top, #cff3c6, #e3f6e7); }
 .column-filter .cuselFrameRight { background: none; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid #f4f4f4; display: block; }
 
+.typeahead .autocomplete-suggestion { overflow: hidden; white-space: nowrap; }
+
 /***************************************************/
 /*      content
 /***************************************************/

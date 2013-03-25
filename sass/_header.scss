@@ -492,3 +492,8 @@
     display: block;
   }
 }
+
+.typeahead .autocomplete-suggestion{
+  overflow: hidden;
+  white-space: nowrap;
+}
