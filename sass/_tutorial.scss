@@ -1,0 +1,165 @@
+.tutorial {
+  .top-bar {
+    z-index: 10000;
+    top: 81px !important;
+    .joverlay {
+      height: 33px;
+      top: 81px;
+    }
+  }
+  .search {
+    z-index: 10000;
+  }
+  .header {
+    z-index: 10001;
+    position: fixed;
+    top: 0 !important;
+    width: 100%;
+    .joverlay {
+      height: 81px;
+    }
+  }
+  .ask-question {
+    z-index: 10003;
+  }
+  .profile {
+    position: relative;
+    z-index: 10002;
+  }
+  .joverlay {
+    display: block;
+    behavior: url(PIE.htc);
+    background: rgba(0, 0, 0, 0.55);
+    -pie-background: rgba(0, 0, 0, 0.55);
+
+  }
+  .content {
+    position: fixed;
+    width: 100%;
+    top: 78px;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  :-moz-placeholder {
+    color: #fff;
+  }
+
+  .placeholder {
+    color: #fff;
+  }
+  .content {
+    z-index: 1000000;
+    .joverlay {
+      top: 114px;
+    }
+  }
+  .column-item {
+    z-index: 1;
+  }
+  .profile__nav {
+    display: none !important;
+  }
+  .footer{
+    z-index: 11111111;
+  }
+}
+
+.tutorial__item__wrap {
+  z-index: 1000000;
+  position: relative;
+}
+
+.tutorial__item {
+  position: fixed;
+  z-index: 11111111;
+  text-align: center;
+  font-family: 'EpsilonCTT';
+  font-size: 32px;
+  font-style: italic;
+  color: #fff;
+  line-height: 28px;
+  big{
+    font-size: 40px;
+  }
+}
+
+.tutorial__arrow {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.tutorial__item1 {
+  left:11%;
+  top: 6px;
+  @extend .tutorial__item;
+  .tutorial__arrow {
+    @include images-sprite(tutorial__arrow1);
+    right: -52px;
+    top: 42px;
+  }
+}
+
+.tutorial__item2 {
+  right: 270px;
+  top: 9px;
+  @extend .tutorial__item;
+  .tutorial__arrow {
+    @include images-sprite(tutorial__arrow2);
+    right: -93px;
+    top: 20px;
+  }
+}
+
+.tutorial__item3 {
+  top: 190px;
+  right: 25%;
+  @extend .tutorial__item;
+  .tutorial__arrow {
+    @include images-sprite(tutorial__arrow3);
+    right: 122px;
+    top: -68px;
+  }
+  @media all and (max-width: 1050px) {
+    & {
+      right: 3%;
+    }
+  }
+}
+
+.tutorial__item4 {
+  left: 565px;
+  top: 324px;
+  @extend .tutorial__item;
+  .tutorial__arrow {
+    @include images-sprite(tutorial__arrow4);
+    left: 7px;
+      top: -80px;
+  }
+}
+
+.tutorial__item5 {
+  left: 567px;
+  top: 480px;
+  @extend .tutorial__item;
+  .tutorial__arrow {
+    @include images-sprite(tutorial__arrow5);
+    left: -5px;
+     top: 69px;
+  }
+}
+
+.column-item__tutorial {
+  z-index: 10004 !important;
+}
+.ico_tutorial-close{
+  @include spr(images, tutorial-close);
+  display: block;
+  position: absolute;
+  top: -95px;
+  right: 0;
+  cursor: pointer;
+}

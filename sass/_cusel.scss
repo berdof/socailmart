@@ -1,0 +1,151 @@
+
+.cusel { /* аОаБбаИаЙ аВаИаД баЕаЛаЕаКбаА аВаКаЛббаАб бббаЕаЛаКб баПбаАаВаА */
+	height: 26px;
+    width: 299px !important;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	font-size: 14px;
+	z-index: 1;
+}
+.cuselFrameRight { /* аЛаЕаВаАб бббб баЕаЛаЕаКб. аОаБбаНаО баКббаГаЛаЕаНаИаЕ аИ аЛаЕаВаАб аГбаАаНаИбаА */
+	position: absolute;
+	z-index: 2;
+	top: 12px;
+	right: 8px;
+    @include spr(images, cuselFrameRight);
+
+}
+
+.cuselText { /* аКаОаНбаЕаЙаНаЕб аДаЛб аОбаОаБбаАаЖаЕаНаНаОаГаО баЕаКббаА баЕаЛаЕаКб */
+	height: 14px;
+	padding: 6px 0 0 7px; /* аПаОаДаБаИбаАаЕаМ аОббббаПб аИ аВббаОбб аДаЛб аВаИаДаИаМаОаГаО баЕаКббаА аВ баЕаЛаЕаКбаЕ */
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	font-size: 13px  ;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+* html .cuselText { /* аВббаОбаА аБаЛаОаКаА аДаЛб баЕаКббаА аДаЛб аИаЕ6 */
+	height: 22px;
+}
+.cusel span { /* аОбаОбаМаЛаЕаНаИаЕ аОаПбаИаОаНаА */
+	display: block;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 2px 15px 2px 5px; /* аПаАаДаДаИаНаГ баПбаАаВаА - ббаО аОббббаП баЕаКббаА аОб аПаОаЛаЗбаНаКаА */
+	zoom: 1;
+}
+.cusel span:hover,
+.cusel .cuselOptHover { /* баЕаАаКбаИб аОаПбаИаОаНаА аНаА аНаАаВаЕаДаЕаНаИаЕ */
+	background: #E9ECFE;
+  color: #000;
+}
+.cusel .cuselActive { /* аОбаОбаМаЛаЕаНаИаЕ аАаКбаИаВаНаОаГаО аОаПбаИаОаНаА аВ баПаИбаКаЕ */
+	background: #E9ECFE;
+
+	cursor: default;
+}
+
+/*
+	styles for focus and hover
+*/
+
+
+.cuselOpen {
+	z-index: 999;
+}
+
+/*
+	styles for disabled select
+*/
+.classDisCusel,
+.classDisCusel .cuselFrameRight {
+	background-image: url(../images/selects-2-dis.png) !important;
+	cursor: default;
+	color: #ccc;
+}
+.classDisCusel .cuselText {
+	cursor: default;
+}
+
+
+/*
+	styles for scrollbar
+*/
+.cusel .cusel-scroll-wrap { /* аКаОаНбаЕаЙаНаЕб аДаЛб аБаЛаОаКаА б аПбаОаКбббаКаОаЙ */
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background: #fff; /* баОаН аВбаПаАаДаАббаЕаГаО баПаИбаКаА */
+	min-width: 100%;
+	width: auto;
+}
+.cusel .jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	border: 1px solid #999; /* аГбаАаНаИбб аВбаПаАаДаАббаЕаГаО баПаИcаКаА */
+}
+
+.cusel .jScrollPaneTrack { /* ббаЕаК аДаЛб аПаОаЛаЗбаНаКаА аПбаОаКбббаКаИ */
+	height: 100%;
+	width: 7px !important;
+	background: #dcdcdc;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.cusel .jScrollPaneDrag { /* аПаОаЛаЗбаНаОаК */
+	position: absolute;
+	cursor: pointer;
+	width: 7px !important;
+	//height: 27px !important;
+	right: 0;
+    background: #afafaf;
+
+}
+
+.cusel .jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.cusel .jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.cusel .jScrollArrowUp { /* бббаЕаЛаКаА аВаВаЕбб */
+	position: absolute;
+	top: 0;
+	right: 2px;
+	width: 26px;
+	height: 12px;
+	cursor: pointer;
+	background-position: -2px -26px;
+	overflow: hidden;
+}
+.cusel .jScrollArrowDown { /* бббаЕаЛаКаА аВаНаИаЗ */
+	width: 25px;
+	height: 12px;
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	right: 3px;
+	cursor: pointer;
+	background-position: -21px -26px;
+	overflow: hidden;
+}
+.cusel-scroll-pane{
+  width: 100% !important;
+}

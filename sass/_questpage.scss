@@ -1,0 +1,40 @@
+.quest{
+  .column-item__question-author{
+    width: 616px;
+  }
+  .column-item__question__soc{
+    display: block;
+  }
+  .column-item__vote-nav{
+    @include opacity(1);
+    visibility: visible;
+  }
+  .textarea{
+    height: 58px;
+  }
+}
+.quest_nav{
+  @extend .nav_hor;
+  li{
+    padding: 0 3.5px;
+  }
+}
+
+.notify{
+  display: block;
+  background: #fff;
+  position: relative;
+  top: -15px;
+  @include box-sizing(border-box);
+  padding: 7px 52px 7px 11px;
+  @include box-shadow(0 1px  2px #d3d3d3);
+  @include pie;
+  h2{
+    line-height: 25px;
+    font-size: 16px;
+  }
+}
+.notify__close{
+  @extend .jpopup_close;
+  top: 13px;
+}

@@ -1,0 +1,145 @@
+.user-profile {
+  width: 675px;
+  .profile-widget {
+    border: 1px solid #eee;
+  }
+  .profile-widget__user {
+    padding: 4px;
+  }
+  .column-item__likes {
+    margin-top: 4px;
+    color: #143359;
+  }
+  .product-soc {
+    @include opacity(1);
+    visibility: visible;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    margin-bottom: 12px;
+  }
+  .tabs {
+
+  }
+  .tabs__nav {
+    li {
+      padding: 0 6px !important;
+      margin: 0 3px;
+    }
+    .active {
+      @include box-shadow(0 1px 1px #c8c8c8 inset);
+    }
+  }
+  .product-users-count {
+    padding-left: 6px;
+  }
+  .tabs__contents, .tabs__nav {
+    border: none;
+  }
+  .catalog__item {
+    width: 337px;
+    .ico_question {
+      margin-left: 0;
+    }
+    .column-item__likes {
+      margin-top: 0;
+    }
+  }
+
+  .recomendation {
+    .column-item__likes {
+      margin-top: 0;
+    }
+  }
+}
+
+.user-profile-info {
+  padding: 7px 13px 0;
+  h2 {
+    font-size: 19px;
+    padding-bottom: 10px;
+  }
+}
+
+.user-profile-info__town {
+  font-size: 13px;
+  padding: 5px 0 0 9px;
+}
+
+.user-profile__row {
+  @include clearfix;
+  border-bottom: 1px solid #e5e5e5;
+  @include box-shadow(0 1px 0 #f8f8f8);
+  padding: 0 0 18px 0;
+  margin: 0 0 15px 0;
+  z-index: 21;
+  position: relative;
+  .product-users-count {
+    padding-left: 6px;
+  }
+  h3 {
+    position: relative;
+    top: 6px;
+    min-height: 25px;
+    padding-right: 23px;
+    padding-bottom: 10px;
+  }
+}
+
+.user-profile__ava {
+  padding: 4px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  @include inline-block();
+  img {
+    width: 95px;
+    height: 95px;
+    display: block;
+  }
+}
+
+.user-carousel-wrap__small {
+  @extend .user-carousel-wrap;
+  width: 330px !important;
+}
+
+.user-carousel-wrap__small2 {
+  position: relative;
+  top: -1px;
+  @extend .user-carousel-wrap__small;
+  .user-carousel {
+    height: 52px !important;
+  }
+  li {
+    width: 52px !important;
+    height: 52px !important;
+    img {
+      width: 52px !important;
+      height: 52px !important;
+    }
+  }
+}
+
+.user-answers {
+  .column-item__answer {
+
+  }
+  .ico_dialog2 {
+    margin: 13px 10px 0 7px;
+  }
+  .column-item__question__text {
+    padding-top: 12px;
+  }
+  .column-item__question__time {
+    span {
+      padding-right: 4px;
+    }
+  }
+  .column-item__question__soc {
+    @include opacity(1);
+    visibility: visible;
+    display: block;
+    margin-right: 9px;
+  }
+}

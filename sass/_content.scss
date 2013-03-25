@@ -1,0 +1,19 @@
+
+.content{
+  @extend .wrapper;
+  @extend .clearfix;
+  padding: 79px 0 33px 0;
+}
+
+@import 'columns';
+@import 'settings-bar';
+@import 'cusel';
+@import 'popup';
+@import 'product-page';
+@import 'catalog';
+@import 'onboarding';
+@import 'user-profile';
+@import 'questpage';
+@import 'notcenter';
+@import 'statics';
+@import 'page404';

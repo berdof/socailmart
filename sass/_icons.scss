@@ -1,0 +1,295 @@
+.ico_info{
+  @include spr(images, i);
+  display:inline-block;
+  cursor: pointer;
+  margin: 0 2px;
+  &:hover{
+    @include images-sprite(i2);
+  }
+}
+.ico_heart{
+  @include spr(images, heart);
+  display:inline-block;
+  cursor: pointer;
+  margin: 0 2px;
+  &:hover{
+    @include images-sprite(heart-h);
+  }
+  &:active{
+    @include images-sprite(heart-a);
+  }
+}
+
+.ico_heart2{
+  @include spr(images, heart2);
+  display:inline-block;
+  margin: 0 4px 0 0;
+}
+
+.ico_question{
+  margin: 0 5px 0 2px;
+  color: transparent;
+  font-size: 0;
+  @include spr(images, ico_question);
+  @include inline-block();
+}
+
+.ico_question2{
+  @extend .ico_question;
+  @include spr(images, ico_question2);
+}
+
+.ico_soc-fb{
+  @include spr(images, ico-fb);
+  display: block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(ico-fb-h);
+  }
+  &:active{
+    @include images-sprite(ico-fb-a);
+  }
+}
+.ico_soc-twitter{
+  @include spr(images, ico-twit);
+  display: block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(ico-twit-h);
+  }
+  &:active{
+    @include images-sprite(ico-twit-a);
+  }
+}
+.ico_soc-vk{
+  @include spr(images, ico-vk);
+  display: block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(ico-vk-h);
+  }
+  &:active{
+    @include images-sprite(ico-vk-a);
+  }
+}
+.ico_heart-big{
+  @include spr(images, heartb);
+  display: block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(heartb-h);
+  }
+  &:active{
+    @include images-sprite(heartb-a);
+  }
+}
+.ico_heart-big2{
+  @include spr(images, heartb2);
+  display: block;
+  cursor: pointer;
+}
+.ico_popup-big{
+  @include spr(images, popup);
+  display: block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(popup-h);
+  }
+  &:active{
+    @include images-sprite(popup-a);
+  }
+}
+.ico_info-big{
+  @include spr(images, infob);
+  display: block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(infob-h);
+  }
+  &:active{
+    @include images-sprite(infob-a);
+  }
+}
+.ico_info-big2{
+  @include spr(images, infob2);
+    display: block;
+    cursor: pointer;
+}
+.ico_vote-up{
+  @include spr(images, vote1);
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(vote1-h);
+  }
+  &:active{
+    @include images-sprite(vote1-a);
+  }
+}
+.ico_vote-down{
+  @include spr(images, vote2);
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(vote2-h);
+  }
+  &:active{
+    @include images-sprite(vote2-a);
+  }
+}
+.ico_vote-comments{
+  @include spr(images, ico_comments);
+  display:inline-block;
+  cursor: pointer;
+}
+.ico_popup{
+  @include spr(images, popups);
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    @include images-sprite(popups-h);
+  }
+}
+.ico_complaint{
+  @include spr(images, ico_complaint);
+  @include inline-block();
+  &:hover{
+    @include images-sprite(ico_complaint-h);
+  }
+  &:active{
+    @include images-sprite(ico_complaint-a);
+  }
+}
+
+.ico_down{
+  @include spr(images, ico_down);
+  @include inline-block();
+}
+.ico_up{
+  @include spr(images, ico_up);
+  @include inline-block();
+}
+.ico_hint{
+  @include spr(images, ico_hint);
+  display: block;
+}
+
+.ico_settings{
+  @include spr(images, ico_settings);
+  @include inline-block();
+  cursor: pointer;
+}
+.ico_yam{
+  @include spr(images, ya);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  .webkit &{
+    top: 9px;
+  }
+}
+.ico_soc-fb_white{
+  @include spr(images, footer_nav-soc1);
+  @include inline-block();
+}
+.ico_soc-twitter_white{
+  @extend .ico_soc-fb_white;
+  @include images-sprite(footer_nav-soc2);
+}
+.ico_soc-vk_white{
+  @extend .ico_soc-fb_white;
+  @include images-sprite(footer_nav-soc3);
+}
+.ico_soc-g_white{
+  @extend .ico_soc-fb_white;
+  @include images-sprite(footer_nav-soc4);
+}
+.ico_product-soc__fb{
+  @include spr(images, product-soc-fb);
+  display: block;
+}
+.ico_product-soc__twitter{
+  @extend .ico_product-soc__fb;
+  @include images-sprite(product-soc-twitter);
+}
+.ico_product-soc__vk{
+  @extend .ico_product-soc__fb;
+  @include images-sprite(product-soc-vk);
+}
+.ico_dialog{
+  @include spr(images, dialog);
+  @include inline-block();
+  margin: 0 3px 0 6px;
+}
+.ico_dialog2{
+  @extend .ico_dialog;
+  @include spr(images, dialog2);
+}
+.ico_friends{
+  @include spr(images, ico-friends);
+  @include inline-block();
+  margin-right: 9px;
+}
+.ico_award{
+  @include spr(images, ico-award);
+  @include inline-block();
+  margin-right: 9px;
+}
+.ico_recomend{
+  @include spr(images, ico-recomend);
+  @include inline-block();
+  margin-right: 16px;
+}
+
+.ico_edit{
+  @include spr(images, ico-edit);
+  @include inline-block();
+}
+
+.ico_delete{
+  @include spr(images, ico-delete);
+  @include inline-block();
+}
+
+.ico_heart_s{
+  @include spr(images, ico__heart_s);
+  display: inline-block;
+}
+.ico_has_s{
+  @include spr(images, ico__has_s);
+  display: inline-block;
+}
+.ico_has_sw{
+  @include spr(images, ico__has_sw);
+  display: inline-block;
+}
+.ico_answer{
+  @include spr(images, ico_answer);
+  display: inline-block;
+}
+.ico_share{
+  @include spr(images, ico_share);
+  display: inline-block;
+}
+.ico_alert{
+  @include spr(images, ico_alert);
+  display: inline-block;
+}
+.ico_basket{
+  @include spr(images, ico_basket);
+  display: inline-block;
+}
+.ico_comments_w{
+  @include spr(images, ico_comments_w);
+  display: inline-block;
+}
+.ico_review{
+  @include spr(images, ico_review);
+  display: inline-block;
+}
+.ico_heart_sw{
+  @include spr(images, ico_heart_sw);
+  display: inline-block;
+}
+
