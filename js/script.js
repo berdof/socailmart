@@ -244,7 +244,7 @@ $(document).ready(function () {
     })
 })
 
-function initProductScroller(){
+function initProductScroller() {
     $('.product-places__scroll, .product-features__scroll').jScrollPane();
 }
 
@@ -270,10 +270,16 @@ $(window).load(function () {
 
     $('.product-info').on('click', initProductScroller)
 
-    $('.where-to-buy').on('click',function(e){
+    $('.where-to-buy').on('click', function (e) {
         $(this).find('form').fadeToggle();
         e.preventDefault();
+    })
 
+    $('.ico_edit2').on('click', function (e) {
+        var self = $(this),
+            txt = self.closest('.column-item__answer').find('.column-item__question__text p').text();
+        self.closest('.column-item').find('.column-item__answer textarea').html(txt);
+        e.preventDefault();
     })
 
 });

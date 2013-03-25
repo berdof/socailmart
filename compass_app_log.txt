@@ -3299,3 +3299,76 @@
 2013-02-25 14:17:20 unchanged D:/work/SocialMart/html/images/images-s6c41946efd.png
 2013-02-25 14:17:21 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
 2013-02-25 14:17:22 overwrite css/style.css 
+2013-03-25 12:07:21    remove D:/work/SocialMart/html/images/images-sd3a733dfe7.png
+2013-03-25 12:07:26    create D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:07:28 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:07:28 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:07:29 overwrite css/style.css 
+2013-03-25 12:25:35 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:25:36 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:25:36 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:25:37 overwrite css/style.css 
+2013-03-25 12:25:38 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:25:39 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:25:39 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:25:40 overwrite css/style.css 
+2013-03-25 12:25:42 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:25:43 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:25:43 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:25:44 overwrite css/style.css 
+2013-03-25 12:25:48 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:25:49 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:25:49 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:25:50 overwrite css/style.css 
+2013-03-25 12:25:58 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:25:59 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:26:00 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:26:00 overwrite css/style.css 
+2013-03-25 12:26:33 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:26:34 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:26:34 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:26:35 overwrite css/style.css 
+2013-03-25 12:27:08 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:27:09 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:27:09 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:27:10 overwrite css/style.css 
+2013-03-25 12:27:13 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:27:14 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:27:14 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:27:16 identical css/style.css 
+2013-03-25 12:27:17 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:27:18 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:27:18 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:27:19 overwrite css/style.css 
+2013-03-25 12:27:43 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:27:43     error sass/style.scss (Line 280 of sass/_icons.scss: Invalid CSS after "...swer .ico_edit2": expected "{", was "& {"
+
+"&" may only be used at the beginning of a compound selector.)
+2013-03-25 12:27:43 overwrite css/style.css 
+2013-03-25 12:27:44 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:27:44     error sass/style.scss (Line 280 of sass/_icons.scss: Invalid CSS after "...nswer .ico_edit": expected "{", was "& {"
+
+"&" may only be used at the beginning of a compound selector.)
+2013-03-25 12:27:44 overwrite css/style.css 
+2013-03-25 12:27:46 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:27:46     error sass/style.scss (Line 280 of sass/_icons.scss: Invalid CSS after "...nswer .ico_edit": expected "{", was "& {"
+
+"&" may only be used at the beginning of a compound selector.)
+2013-03-25 12:27:46 identical css/style.css 
+2013-03-25 12:27:49 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:27:50     error sass/style.scss (Line 280 of sass/_icons.scss: Invalid CSS after "...-item__answer a": expected "{", was "& {"
+
+"&" may only be used at the beginning of a compound selector.)
+2013-03-25 12:27:50 overwrite css/style.css 
+2013-03-25 12:27:55 unchanged D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:27:56 unchanged D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:27:56 unchanged D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:27:57 overwrite css/style.css 
+2013-03-25 12:29:23    remove .sass-cache/ 
+2013-03-25 12:29:23    remove css/jquery.jscrollpane.css 
+2013-03-25 12:29:23    remove css/style.css 
+2013-03-25 12:29:23    create css/jquery.jscrollpane.css 
+2013-03-25 12:29:30    create D:/work/SocialMart/html/images/images-sac62f1d221.png
+2013-03-25 12:29:32    create D:/work/SocialMart/html/images/ico_partnership-s0c0dae5413.png
+2013-03-25 12:29:32    create D:/work/SocialMart/html/images/p404-sa2b05db1eb.png
+2013-03-25 12:29:33    create css/style.css 
