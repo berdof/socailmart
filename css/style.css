@@ -427,7 +427,7 @@ h3 { font-weight: 700; font-size: 13px; padding: 0 0 14px 0; }
 
 .column-item__question-author { width: 169px; display: table-cell; height: 26px; vertical-align: middle; color: #002e58; font-size: 12px; cursor: pointer; }
 
-.column-item__question__text { color: #0a062b; font-size: 13px; padding: 6px 0; line-height: 1.2; }
+.column-item__question__text { color: #0a062b; font-size: 12px; padding: 6px 0; line-height: 1.2; }
 .column-item__question__text p { padding-top: 6px; }
 
 .column-item__question__rate { padding: 0 7px 0 3px; margin-left: 26px; position: relative; display: inline-block; font-size: 12px; line-height: 14px; color: #2e6b0a; }
