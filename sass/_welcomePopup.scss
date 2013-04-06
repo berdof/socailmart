@@ -1,0 +1,48 @@
+//17-40
+.smwPopup{
+  display: none;
+  background: url('../images/smwPopup/smwPopup.png') no-repeat;
+  width: 618px;
+  height: 403px;
+  @include box-sizing(border-box);
+  position: absolute;
+  z-index: 1001;
+  left: 50%;
+  top: 50%;
+  margin: -201px 0 0 -309px;
+  padding: 43px 105px 5px;
+  text-align: center;
+  color: #fff;
+  font-family:300 19px/24px "Tahoma";
+  h2{
+    font-size: 24px;
+    padding-bottom: 23px;
+  }
+  img{
+    margin: 0 0 11px 0;
+  }
+  p{
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+}
+.smwPopup__close{
+  background: url('../images/smwPopup/smwPopup__close.png') no-repeat;
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.smwOverlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  position: fixed;
+  display: none;
+  background: #000;
+  opacity: .6;
+}
