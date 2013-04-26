@@ -6,6 +6,7 @@
   li {
     border-top: 1px solid #f1f1f1;
     font-size: 12px;
+    overflow: hidden;
     &:first-child {
       border-top: none;
     }
