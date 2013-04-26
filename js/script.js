@@ -296,6 +296,11 @@ $(window).load(function () {
 
     SmwPopupHandling();
     SmwPopupShow('.smwPopup');
+    $('.minipopup__list-scroll').jScrollPane();
+    $('.togglers__item').on('click',function(){
+        var self = $(this);
+        self.toggleClass('active')
+    })
 });
 $(window).scroll(function () {
     if ($(window).scrollTop() > $('.header').height()) {
