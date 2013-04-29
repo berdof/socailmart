@@ -2102,10 +2102,11 @@ h3 {
 .profile-widget__user-name {
   color: #092f52 !important;
   font-size: 13px !important;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
   margin-top: -4px;
   display: inline-block;
   text-decoration: none;
+  color: #253d52;
 }
 
 .profile-widget__ava {
@@ -2140,16 +2141,23 @@ h3 {
   width: 18px;
 }
 
+.profile-widget__user-info__label {
+  font-size: 12px;
+  height: 23px;
+  line-height: 23px;
+  display: block;
+}
+
 .profile-widget__counter {
   overflow: hidden;
 }
 
 .profile-widget__counter__digit, .profile-widget__counter__text {
-  width: 18px;
-  height: 18px;
-  line-height: 18px;
+  width: 19px;
+  height: 23px;
+  line-height: 23px;
   text-align: center;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #d1d1d1;
   display: block;
   float: left;
   color: #1d1d1d;
@@ -2168,6 +2176,7 @@ h3 {
   transition: all 0.4s ease 0.4s;
   behavior: url(PIE.htc);
   position: relative;
+  margin-right: 1px;
 }
 
 .profile-widget__counter__text {
@@ -2179,40 +2188,59 @@ h3 {
 
 .profile-widget__rating {
   background: #f1fbf6;
-  padding: 0 8px 8px 8px;
+  padding: 10px 8px 15px 8px;
 }
 
 .profile-widget__progress-bar__line {
   display: block;
   background: #f4f4f3;
   border-top: 1px solid #e3e3e2;
+  border: 1px solid #d9d9d9;
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.19);
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #f9f9f9), color-stop(64.5%, #e7e7e7), color-stop(76.76%, #efefef), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(bottom, #f9f9f9 0%, #e7e7e7 64.5%, #efefef 76.76%, #ffffff 100%);
+  background-image: -moz-linear-gradient(bottom, #f9f9f9 0%, #e7e7e7 64.5%, #efefef 76.76%, #ffffff 100%);
+  background-image: -o-linear-gradient(bottom, #f9f9f9 0%, #e7e7e7 64.5%, #efefef 76.76%, #ffffff 100%);
+  background-image: linear-gradient(bottom, #f9f9f9 0%, #e7e7e7 64.5%, #efefef 76.76%, #ffffff 100%);
+  -pie-background: linear-gradient(bottom, #f9f9f9 0%, #e7e7e7 64.5%, #efefef 76.76%, #ffffff 100%);
+  background-image: -ms-linear-gradient(bottom, #f9f9f9 0%, #e7e7e7 64.5%, #efefef 76.76%, #ffffff 100%);
+  behavior: url(PIE.htc);
+  position: relative;
+  height: 18px;
+  line-height: 18px;
+  text-align: right;
+  font-size: 10px;
+  padding: 0 6px 0 0;
 }
 .profile-widget__progress-bar__line span {
   display: block;
-  height: 10px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #3dba7e), color-stop(100%, #0d5193));
-  background-image: -webkit-linear-gradient(left, #3dba7e, #0d5193);
-  background-image: -moz-linear-gradient(left, #3dba7e, #0d5193);
-  background-image: -o-linear-gradient(left, #3dba7e, #0d5193);
-  background-image: linear-gradient(left, #3dba7e, #0d5193);
-  -pie-background: linear-gradient(left, #3dba7e, #0d5193);
-  background-image: -ms-linear-gradient(left, #3dba7e, #0d5193);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 19px;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #99d5fb), color-stop(2.34%, #5bb5ed), color-stop(9.13%, #8bd3fb), color-stop(46.22%, #5da3f3), color-stop(59.79%, #79ade9), color-stop(64.75%, #93bfeb), color-stop(79.64%, #a3c6eb), color-stop(93.99%, #93b9e7), color-stop(100%, #799bdb));
+  background-image: -webkit-linear-gradient(bottom, #99d5fb 0%, #5bb5ed 2.34%, #8bd3fb 9.13%, #5da3f3 46.22%, #79ade9 59.79%, #93bfeb 64.75%, #a3c6eb 79.64%, #93b9e7 93.99%, #799bdb 100%);
+  background-image: -moz-linear-gradient(bottom, #99d5fb 0%, #5bb5ed 2.34%, #8bd3fb 9.13%, #5da3f3 46.22%, #79ade9 59.79%, #93bfeb 64.75%, #a3c6eb 79.64%, #93b9e7 93.99%, #799bdb 100%);
+  background-image: -o-linear-gradient(bottom, #99d5fb 0%, #5bb5ed 2.34%, #8bd3fb 9.13%, #5da3f3 46.22%, #79ade9 59.79%, #93bfeb 64.75%, #a3c6eb 79.64%, #93b9e7 93.99%, #799bdb 100%);
+  background-image: linear-gradient(bottom, #99d5fb 0%, #5bb5ed 2.34%, #8bd3fb 9.13%, #5da3f3 46.22%, #79ade9 59.79%, #93bfeb 64.75%, #a3c6eb 79.64%, #93b9e7 93.99%, #799bdb 100%);
+  -pie-background: linear-gradient(bottom, #99d5fb 0%, #5bb5ed 2.34%, #8bd3fb 9.13%, #5da3f3 46.22%, #79ade9 59.79%, #93bfeb 64.75%, #a3c6eb 79.64%, #93b9e7 93.99%, #799bdb 100%);
+  background-image: -ms-linear-gradient(bottom, #99d5fb 0%, #5bb5ed 2.34%, #8bd3fb 9.13%, #5da3f3 46.22%, #79ade9 59.79%, #93bfeb 64.75%, #a3c6eb 79.64%, #93b9e7 93.99%, #799bdb 100%);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=81);
+  opacity: 0.81;
   behavior: url(PIE.htc);
-  position: relative;
+  z-index: 1;
 }
 
 .profile-widget__progress-bar__info {
-  overflow: hidden;
-  color: #505251;
-  font-size: 13px;
-  margin: 8px 0 0;
+  position: relative;
+  z-index: 2;
   display: block;
-}
-.profile-widget__progress-bar__info .current {
-  overflow: hidden;
-  text-align: center;
-  display: block;
-  color: #026a27;
+  width: 100%;
+  text-align: right;
+  font-style: normal;
+  top: 1px;
 }
 
 .profile-widget__state {
@@ -2355,6 +2383,7 @@ h3 {
   font-size: 12px;
   line-height: 1.2;
   padding: 10px 10px 0 61px;
+  z-index: 10;
 }
 .profile-widget__badge img {
   position: absolute;

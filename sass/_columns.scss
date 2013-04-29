@@ -576,10 +576,11 @@
 .profile-widget__user-name {
   color: #092f52 !important;
   font-size: 13px !important;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
   margin-top: -4px;
   display: inline-block;
   text-decoration: none;
+  color: #253d52;
 }
 
 .profile-widget__ava {
@@ -588,7 +589,6 @@
   margin-right: 10px;
   display: block;
 }
-
 .profile-widget__position {
   font-size: 11px !important;
   color: #092f52 !important;
@@ -611,15 +611,20 @@
   }
 }
 
+.profile-widget__user-info__label{
+  font-size: 12px;
+  @include h-line-height(23px);
+  display: block;
+}
 .profile-widget__counter {
   overflow: hidden;
 }
 
 .profile-widget__counter__digit {
-  width: 18px;
-  @include h-line-height(18px);
+  width: 19px;
+  @include h-line-height(23px);
   text-align: center;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #d1d1d1;
   display: block;
   float: left;
   color: #1d1d1d;
@@ -627,6 +632,7 @@
   @include grad(linear-gradient(top, #e8e8e8, #fdfdfd));
   @include transition(all 0.4s ease 0.4s);
   @include pie;
+  margin-right: 1px;
 }
 
 .profile-widget__counter__text {
@@ -639,33 +645,43 @@
 
 .profile-widget__rating {
   background: #f1fbf6;;
-  padding: 0 8px 8px 8px;
+  padding: 10px 8px 15px 8px;
 }
 
 .profile-widget__progress-bar__line {
   display: block;
   background: #f4f4f3;
   border-top: 1px solid #e3e3e2;
+  border: 1px solid #d9d9d9;
+  @include box-shadow(inset 0 1px 0 rgba(0,0,0,.19));
+  @include grad(linear-gradient(bottom, #f9f9f9 0%, #e7e7e7 64.5%, #efefef 76.76%, #fff 100%));
+  @include pie;
+  @include h-line-height(18px);
+  text-align: right;
+  font-size: 10px;
+  padding: 0 6px 0 0;
+
   span {
     display: block;
-    height: 10px;
-    @include grad(linear-gradient(left, #3dba7e, #0d5193));
-    @include pie;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 19px;
+    @include grad(linear-gradient(bottom, #99d5fb 0%, #5bb5ed 2.34%, #8bd3fb 9.13%, #5da3f3 46.22%, #79ade9 59.79%, #93bfeb 64.75%, #a3c6eb 79.64%, #93b9e7 93.99%, #799bdb 100%));
+    @include opacity(.81);
+    behavior: url(PIE.htc);
+    z-index: 1;
   }
 }
 
 .profile-widget__progress-bar__info {
-  overflow: hidden;
-  color: #505251;
-  font-size: 13px;
-  margin: 8px 0 0;
+  position: relative;
+  z-index: 2;
   display: block;
-  .current {
-    overflow: hidden;
-    text-align: center;
-    display: block;
-    color: #026a27;
-  }
+  width: 100%;
+  text-align: right;
+  font-style: normal;
+  top: 1px;
 }
 
 .profile-widget__state {
@@ -785,6 +801,7 @@
   font-size: 12px;
   line-height: 1.2;
   padding: 10px 10px 0 61px;
+  z-index: 10;
   img{
     position: absolute;
     left: 0;
