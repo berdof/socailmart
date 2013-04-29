@@ -1,0 +1,759 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+    <script>document.write('<script src="http://'
+            + (location.host || 'localhost').split(':')[0]
+            + ':35729/livereload.js"></'
+            + 'script>')</script>
+
+    <!-- All JavaScript at the bottom, except this Modernizr build.
+         Modernizr enables HTML5 elements & feature detects for optimal performance.
+         Create your own custom Modernizr build: www.modernizr.com/download/ -->
+    <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a
+    different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a>
+    to experience this site.</p><![endif]-->
+
+
+<a class="to-top" href="#"></a>
+
+<header role='banner' class="header">
+    <div class="wrapper">
+        <a class="logo fl_l" href="#"></a>
+
+        <form class="fl_l column-filter" action="#">
+            <select name="selh" id="selh">
+                <option value="1">Лента активностей</option>
+                <option value="2">Популярные гаджеты</option>
+                <option value="3">Мои впечатления</option>
+                <option value="4">Впечатления друзей</option>
+            </select>
+        </form>
+        <a class="expert-btn fl_l" href="#">Эксперты</a>
+
+        <form class="search fl_l" action="#">
+            <input data-provide="typeahead" data-items="4"
+                   data-source='["Alabamasssssssssssssssssssssssssssssssssss asd asd asd as da s assssssssssssssss asd as d","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'
+                   type="text" placeholder="Найди гаджет - поделись впечатлен ием"/>
+            <input type="submit" value=""/>
+        </form>
+
+        <div data-toggle-target="profile__nav" class="profile fl_r">
+            <div class="profile__user">
+                <div class="fl_l">
+                    <a class="profile__user__name" href="#">Alexandra N</a>
+
+
+                </div>
+                <div class="profile__user-pic fl_l">
+                    <img class="fl_l" src="images/tmp/profile__user-pic.png" alt=""/>
+                      <span class="profile__user-pic-rate fl_l">
+                          <i class="profile__user-pic-rate__ico"></i>
+                          <span class="profile__user-pic-rate__num">25</span>
+                      </span>
+                </div>
+            </div>
+            <ul data-toggle='true' class="profile__nav">
+                <li><a href="#"><strong>Пригласить друзей</strong><i class="profile__nav-plus"></i></a></li>
+                <li><a href="#">Уведомления <span class="profile__nav-message">25</span></a></li>
+                <li><a href="#">Мой SocialMart</a></li>
+                <li><a href="#">Настройки</a></li>
+                <li><a href="#">Выход</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+
+<div role="main" class="content wrapper_w827-905   ">
+<ul class="breadcrumbs">
+    <li><a href="#">Все пользователи</a></li>
+    <li><a class="active" href="#">Мой профиль</a></li>
+</ul>
+<div class="clearfix">
+<div class="user-profile fl_l">
+
+<div class="user-profile__row">
+    <a class="user-profile__ava fl_l" href="#"><img src="images/tmp/ava65x65.jpg" alt=""/></a>
+
+    <div class="profile-widget fl_r">
+        <div class="profile-widget__user">
+
+            <div class="profile-widget__user-info  ">
+
+                <div class="clearfix">
+                    <span class="profile-widget__user-info__label fl_l">Очки</span>
+
+                    <div class="profile-widget__counter fl_r">
+                        <span class="profile-widget__counter__digit">1</span>
+                        <span class="profile-widget__counter__digit">2</span>
+                        <span class="profile-widget__counter__digit">3</span>
+                        <span class="profile-widget__counter__digit">4</span>
+                        <span class="profile-widget__counter__digit">5</span>
+                        <span class="profile-widget__counter__digit">6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-widget__rating">
+        <span class="profile-widget__state">
+            <strong class="fl_l">Продвинутый</strong>
+            <span class="fl_r">Гуру</span>
+            <span class="profile-widget__state__divider"><i></i></span>
+        </span>
+            <span class="profile-widget__progress-bar__line">
+                <span style="width:50%;"></span>
+                <i class="profile-widget__progress-bar__info">1280</i>
+            </span>
+        </div>
+
+    </div>
+
+    <div class="user-profile-info center">
+        <h2>Виктория Курмангалеева</h2>
+
+        <div class="clearfix">
+            <ul class="product-soc fl_l">
+                <li><a href="#" class="ico_product-soc__fb"></a></li>
+                <li><a href="#" class="ico_product-soc__vk"></a></li>
+            </ul>
+            <span class="user-profile-info__town fl_l">Москва, Россия</span>
+        </div>
+        <a class="btn_blue" href="#">Настройки профиля</a>
+    </div>
+</div>
+
+<div class="user-profile__row">
+<div class="fl_l  ">
+    <header class="clearfix">
+        <h3 class="fl_l">
+            <i class="ico_friends"></i>Друзья <span class="product-users-count">134</span>
+        </h3>
+        <a class="btn_blue fl_l" href="#">Пригласить + </a>
+
+    </header>
+    <div class="pr">
+        <div id="user-carousel3" class="user-carousel-wrap__small">
+            <button class="user-carousel__arr_l"></button>
+            <button class="user-carousel__arr_r"></button>
+            <div class="user-carousel">
+                <ul data-balloon='#user-carousel-info1' class="user-carousel__in">
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый2" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый3" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый4" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый5" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый6" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый7" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                    <li><a title='Алена Владимирская' data-info="Продвинутый" href="#"><img
+                            src="images/tmp/ava-34x34.png" alt=""/></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="user-carousel-info1" class="user-carousel-info w330">
+            <span class="user-carousel-info__name">Алена Владимирская,</span>
+            <span class="user-carousel-info__info">Продвинутый</span>
+        </div>
+    </div>
+</div>
+<div class="fl_r  ">
+    <header class="clearfix">
+        <h3 class="fl_l">
+            <i class="ico_award"></i>Награды <span class="product-users-count">5</span>
+        </h3>
+
+    </header>
+    <div class="pr">
+        <div id="user-carousel4" class="user-carousel-wrap__small">
+            <button class="user-carousel__arr_l"></button>
+            <button class="user-carousel__arr_r"></button>
+            <div class="user-carousel">
+                <ul data-balloon='#user-carousel-info2' class="user-carousel__in">
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру' data-info="25 и более лайков двух категорий" href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру' data-info="25 и более лайков двух категорий" href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру' data-info="25 и более лайков двух категорий" href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру' data-info="25 и более лайков двух категорий" href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру' data-info="25 и более лайков двух категорий" href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру' data-info="25 и более лайков двух категорий" href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a title='Кенгуру'
+                           data-info="25 и более лайков двух категорий25 и более лайков двух категорий25 и более лайков двух категорий"
+                           href="#">
+                            <img src="images/tmp/badge47x47.png" alt=""/>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="user-carousel-info2" class="user-carousel-info w330">
+            <span class="user-carousel-info__name">Алена Владимирская,</span>
+            <span class="user-carousel-info__info">Продвинутый</span>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="tabs tabs2 product-users">
+<ul class="tabs__nav">
+    <li class="active">
+          Хочу <span class="product-users-count">4</span>
+    </li>
+    <li>
+         Имею <span class="product-users-count">4</span>
+    </li>
+</ul>
+<div class="tabs__contents">
+<div class="tabs__contents__item">
+    <div class="clearfix">
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tabs__contents__item">
+    <div class="clearfix">
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+        <div class="catalog__item fl_l ">
+
+            <ul class="catalog__item__nav">
+                <li><a href="#" class="ico_info-big2"></a></li>
+                <li><a href="#" class="ico_heart-big2"></a></li>
+            </ul>
+
+
+            <div class="catalog__item__img fl_l">
+                <img src="images/tmp/catalog__item__img.png" alt="">
+            </div>
+
+            <div class="center">
+                <a href="#" class="column-item__title">Samsung Galaxy S3 Popular Edition</a>
+
+                <div class="product-rate  ">
+                    <div style="width: 60%"></div>
+                </div>
+                <span class="column-item__price ">14 215 руб</span>
+
+                <div class="clearfix">
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_question">?</i>26</a>
+                    <a class="column-item__likes fl_l" href="#"><i class="ico_dialog"></i>56</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+</div>
+<footer role="contentinfo" class="footer">
+    <div class="wrapper">
+        <a class="footer__logo fl_l" href="#"></a>
+
+        <div class="footer__copy footer__item fl_r">
+            (C) 2013 SocialMart.
+        </div>
+
+        <div class="center tac">
+            <div class="dib">
+                <a class="yad-data footer__item fl_r" href="#"></a>
+                <ul class="footer_nav-soc footer__item fl_r">
+                    <li><a class="ico_soc-fb_white" href="#"></a></li>
+                    <li><a class="ico_soc-twitter_white" href="#"></a></li>
+                    <li><a class="ico_soc-vk_white" href="#"></a></li>
+                </ul>
+
+                <ul class="footer_nav footer__item fl_r">
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Партнерство</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+<script src="js/libs/jquery-1.7.1.min.js"></script>
+<script src="js/libs/jquery.placeholder.min.js"></script>
+<script src="js/libs/jquery.masonry.min.js"></script>
+<script src="js/libs/jquery.cycle.all.js"></script>
+<script src="js/libs/jquery.checkboxes.js"></script>
+<script src="js/libs/cusel-min-2.5.js"></script>
+<script src="js/libs/jquery.popup.js"></script>
+<script src="js/libs/jquery.jscrollpane.min.js"></script>
+<script src="js/libs/jquery.mousewheel.js"></script>
+<script src="js/libs/jquery.scrollTo-min.js"></script>
+<script src="js/libs/jquery.bootstrap-typehead.js"></script>
+<script src="js/libs/jquery.rate.js"></script>
+<script src="js/libs/jquery.jcarousellite.js"></script>
+<script src="js/libs/jquery.autoresize.js"></script>
+<!-- scripts concatenated and minified via build script -->
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<!-- end scripts -->
+
+</body>
+</html>
