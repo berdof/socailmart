@@ -30,9 +30,9 @@
     .active {
       @include box-shadow(0 1px 1px #c8c8c8 inset);
     }
-  }
-  .product-users-count {
-    padding-left: 6px;
+    .product-users-count {
+      padding-left: 6px;
+    }
   }
   .tabs__contents, .tabs__nav {
     border: none;
@@ -84,6 +84,11 @@
     min-height: 25px;
     padding-right: 23px;
     padding-bottom: 10px;
+  }
+  header{
+    .btn_lblue_big{
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -141,5 +146,87 @@
     visibility: visible;
     display: block;
     margin-right: 9px;
+  }
+}
+.catalog__item-list{
+  @include clearfix;
+  border-bottom: 1px solid #e8e8e8;
+}
+.catalog__item2 {
+  @extend .catalog__item;
+  //@include box-shadow(inset 0 1px 0 rgba(57,121,239,.22));
+  border: 0;
+  background-color: #f3f3f3;
+  border-top: 1px solid #e8e8e8;
+
+  height: 95px;
+  &:hover{
+    background-color: #e9ebf7;
+    border-top: 1px solid #d7def5;
+  }
+  .catalog__item__img {
+    left: 0;
+    margin: 0;
+    height: 95px !important;
+    padding: 0;
+    @include box-sizing(border-box);
+    display: table-cell;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  .column-item__title {
+    font-size: 13px;
+    width: 220px;
+  }
+
+  .product-rate_big {
+    background: url('../images/stars2.png');
+    height: 12px;
+    width: 65px;
+    margin-top: 11px;
+    span{
+      height: 12px;
+      background: url("../images/stars2.png") repeat scroll 0 11px transparent;
+      display: block;
+    }
+  }
+  .column-item__interact {
+    top: 17px;
+    right: 12px;
+    left: auto;
+    &:before{
+      top: 19px;
+    }
+  }
+
+  &:hover {
+    .column-item__interact {
+      @include opacity(1);
+    }
+  }
+  .column-item__likes{
+    @include h-line-height(11px);
+    margin-left: 3px;
+    margin-top: 11px !important;
+    .ico_vote-comments{
+      margin-right: 5px;
+    }
+  }
+  .column-item__price{
+    margin-top: 3px;
+  }
+}
+
+.catalog__item__descr {
+  padding: 15px 0 0 14px;
+  //border-top: 1px solid #d7def5;
+}
+
+.tabs3{
+  .tabs__nav{
+    border-bottom: 1px solid #e5e5e5;
+    li{
+      margin: 0 3px 0 0;
+    }
   }
 }

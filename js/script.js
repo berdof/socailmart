@@ -255,13 +255,13 @@ function SmwPopupHide(className) {
     $(className + ', .smwOverlay').fadeOut();
 }
 function SmwPopupHandling() {
-    $('.smwOverlay, .smwPopup__close').on('click',function(){
+    $('.smwOverlay, .smwPopup__close').on('click', function () {
         console.log(111);
         SmwPopupHide('.smwPopup');
     })
 }
 $(window).load(function () {
-
+    var $settingsBar = $('.settings-bar__in');
     $('.columns').masonry({
         // options
         itemSelector: '*[data-column]',
@@ -274,8 +274,8 @@ $(window).load(function () {
     $('.onboarding__btn a').click(function () {
         $('.onboarding__email').fadeToggle(350);
     })
-
-    $('.settings-bar__in').fixedSidebar();
+    if ($settingsBar.length > 0)
+        $settingsBar.fixedSidebar();
 
 
     initProductScroller();
@@ -297,7 +297,7 @@ $(window).load(function () {
     SmwPopupHandling();
     SmwPopupShow('.smwPopup');
     $('.minipopup__list-scroll').jScrollPane();
-    $('.togglers__item').on('click',function(){
+    $('.togglers__item').on('click', function () {
         var self = $(this);
         self.toggleClass('active')
     })

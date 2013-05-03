@@ -158,3 +158,9 @@
     }
   }
 }
+
+.btn_lblue_big{
+  @extend .btn_lblue;
+  @include h-line-height(23px);
+  font-size: 13px;
+}
