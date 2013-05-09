@@ -260,6 +260,19 @@ function SmwPopupHandling() {
         SmwPopupHide('.smwPopup');
     })
 }
+
+function productSlideshowInit() {
+    $('.slideshow__in').cycle({
+        next: '.slideshow__next',
+        prev: '.slideshow__prev',
+        fx: 'scrollHorz',
+        pager:'.slideshow__nav',
+        activePagerClass:'active',
+        pagerAnchorBuilder: function (idx, slide) {
+            return '<li><a href="#"></a></li>';
+        }
+    })
+}
 $(window).load(function () {
     var $settingsBar = $('.settings-bar__in');
     $('.columns').masonry({
@@ -301,6 +314,7 @@ $(window).load(function () {
         var self = $(this);
         self.toggleClass('active')
     })
+    productSlideshowInit();
 });
 $(window).scroll(function () {
     if ($(window).scrollTop() > $('.header').height()) {

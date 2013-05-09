@@ -131,7 +131,8 @@
   &:hover {
     @include images-sprite(vote1-h);
   }
-  &:active {
+  &:active ,
+  &.active {
     @include images-sprite(vote1-a);
   }
 }
@@ -143,7 +144,8 @@
   &:hover {
     @include images-sprite(vote2-h);
   }
-  &:active {
+  &:active ,
+  &.active {
     @include images-sprite(vote2-a);
   }
 }
@@ -338,3 +340,7 @@
   display: inline-block;
 }
 
+.ico_description{
+  @include spr(images, ico_description);
+  display: inline-block;
+}
