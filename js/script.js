@@ -84,11 +84,11 @@ $(document).ready(function () {
     })
     //!tabs
     //user-carousel
-    loadUserCarousel(1, 15);
+    loadUserCarousel(1, 9);
     $('#user-carousel2 .user-carousel').data({'active': 'false'})
     $('.product-users .tabs__nav li:nth-child(2)').click(function () {
         if ($('#user-carousel2 .user-carousel').data('active') == 'false') {
-            loadUserCarousel(2, 15);
+            loadUserCarousel(2, 9);
             $('#user-carousel2 .user-carousel').data({'active': 'true'})
         }
     })

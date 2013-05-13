@@ -5,6 +5,38 @@
   padding: 79px 0 33px 0;
 }
 
+
+.product-rate {
+  background: url(../images/stars.png);
+  width: 55px;
+  height: 8px;
+  position: relative;
+  margin: 3px 55px 0 0;
+}
+
+.product-rate div {
+  background: url(../images/stars.png) left bottom;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.product-rate span {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: url(../images/stars.png) left center;
+  width: 0;
+  cursor: pointer;
+}
+
 @import 'columns';
 @import 'settings-bar';
 @import 'cusel';
