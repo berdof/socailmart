@@ -4,18 +4,15 @@
  * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
  * may not operate correctly without them.
  */
-/* line 9, ../sass/jquery.jscrollpane.scss */
 .jspContainer {
   overflow: hidden;
   position: relative;
 }
 
-/* line 15, ../sass/jquery.jscrollpane.scss */
 .jspPane {
   position: absolute;
 }
 
-/* line 20, ../sass/jquery.jscrollpane.scss */
 .jspVerticalBar {
   position: absolute;
   top: 0;
@@ -24,7 +21,6 @@
   height: 100%;
 }
 
-/* line 29, ../sass/jquery.jscrollpane.scss */
 .jspHorizontalBar {
   position: absolute;
   bottom: 0;
@@ -34,30 +30,25 @@
   background: red;
 }
 
-/* line 40, ../sass/jquery.jscrollpane.scss */
 .jspVerticalBar *,
 .jspHorizontalBar * {
   margin: 0;
   padding: 0;
 }
 
-/* line 46, ../sass/jquery.jscrollpane.scss */
 .jspCap {
   display: none;
 }
 
-/* line 51, ../sass/jquery.jscrollpane.scss */
 .jspHorizontalBar .jspCap {
   float: left;
 }
 
-/* line 56, ../sass/jquery.jscrollpane.scss */
 .jspTrack {
   background: #dcdcdc;
   position: relative;
 }
 
-/* line 62, ../sass/jquery.jscrollpane.scss */
 .jspDrag {
   background: #aeaeae;
   position: relative;
@@ -66,14 +57,12 @@
   cursor: pointer;
 }
 
-/* line 72, ../sass/jquery.jscrollpane.scss */
 .jspHorizontalBar .jspTrack,
 .jspHorizontalBar .jspDrag {
   float: left;
   height: 100%;
 }
 
-/* line 78, ../sass/jquery.jscrollpane.scss */
 .jspArrow {
   background: #50506d;
   text-indent: -20000px;
@@ -81,30 +70,25 @@
   cursor: pointer;
 }
 
-/* line 86, ../sass/jquery.jscrollpane.scss */
 .jspArrow.jspDisabled {
   cursor: default;
   background: #80808d;
 }
 
-/* line 92, ../sass/jquery.jscrollpane.scss */
 .jspVerticalBar .jspArrow {
   height: 16px;
 }
 
-/* line 97, ../sass/jquery.jscrollpane.scss */
 .jspHorizontalBar .jspArrow {
   width: 16px;
   float: left;
   height: 100%;
 }
 
-/* line 104, ../sass/jquery.jscrollpane.scss */
 .jspVerticalBar .jspArrow:focus {
   outline: none;
 }
 
-/* line 109, ../sass/jquery.jscrollpane.scss */
 .jspCorner {
   background: #eeeef4;
   float: left;
@@ -112,7 +96,6 @@
 }
 
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
-/* line 117, ../sass/jquery.jscrollpane.scss */
 * html .jspCorner {
   margin: 0 -3px 0 0;
 }

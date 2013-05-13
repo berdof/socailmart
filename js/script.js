@@ -266,8 +266,8 @@ function productSlideshowInit() {
         next: '.slideshow__next',
         prev: '.slideshow__prev',
         fx: 'scrollHorz',
-        pager:'.slideshow__nav',
-        activePagerClass:'active',
+        pager: '.slideshow__nav',
+        activePagerClass: 'active',
         pagerAnchorBuilder: function (idx, slide) {
             return '<li><a href="#"></a></li>';
         }
@@ -315,7 +315,24 @@ $(window).load(function () {
         self.toggleClass('active')
     })
     productSlideshowInit();
-});
+
+    $('.nav_categories_vendor__scroll').jScrollPane();
+
+    $("#slider-range").slider({
+        range: true,
+        min: 3000,
+        max: 100000,
+        values: [ 10000, 30000 ],
+        slide: function (event, ui) {
+            $(".slider__from").html(ui.values[ 0 ] + '<small>руб</small>');
+            $(".slider__to").html(ui.values[ 1 ] + '<small>руб</small>');
+        }
+    });
+    $('.slider__from').html($("#slider-range").slider("values", 0)+ '<small>руб</small>');
+    $('.slider__to').html($("#slider-range").slider("values", 1)+ '<small>руб</small>');
+
+})
+;
 $(window).scroll(function () {
     if ($(window).scrollTop() > $('.header').height()) {
         $('.top-bar').css('top', '0px');

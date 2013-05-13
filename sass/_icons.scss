@@ -344,3 +344,10 @@
   @include spr(images, ico_description);
   display: inline-block;
 }
+.ico_check_big{
+  @include spr(images, ico_check_big);
+  display: inline-block;
+  &.disable{
+    @include images-sprite(ico_check_big2);
+  }
+}
