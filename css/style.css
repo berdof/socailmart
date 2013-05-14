@@ -5087,8 +5087,6 @@ h3 {
 
 .nav_categories_vendor__item a {
   position: relative;
-}
-.nav_categories_vendor__item.checked a {
   padding: 0 0 0 30px;
 }
 .nav_categories_vendor__item.checked a:before {

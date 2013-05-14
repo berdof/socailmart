@@ -47,6 +47,7 @@
 .nav_categories_vendor__item {
   a {
     position: relative;
+    padding: 0 0 0 30px;
   }
   &.checked {
     a {
@@ -58,7 +59,7 @@
         display: block;
         @include spr(images, ico_check_big);
       }
-      padding: 0 0 0 30px;
+
     }
   }
   &.disabled {

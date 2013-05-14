@@ -241,8 +241,14 @@ $(document).ready(function () {
     $('.onboarding__overlay').live('click', function () {
         $('.onboarding').slideUp(250);
         $(this).fadeOut(250);
+    });
+    $('.nav_categories_vendor__item a').on('click', function (e) {
+        var targ =$(this).parent();
+        if(!targ.hasClass('disabled'))
+            targ.toggleClass('checked');
+        e.preventDefault();
     })
-})
+});
 
 function initProductScroller() {
     $('.product-places__scroll, .product-features__scroll').jScrollPane();
@@ -328,8 +334,8 @@ $(window).load(function () {
             $(".slider__to").html(ui.values[ 1 ] + '<small>руб</small>');
         }
     });
-    $('.slider__from').html($("#slider-range").slider("values", 0)+ '<small>руб</small>');
-    $('.slider__to').html($("#slider-range").slider("values", 1)+ '<small>руб</small>');
+    $('.slider__from').html($("#slider-range").slider("values", 0) + '<small>руб</small>');
+    $('.slider__to').html($("#slider-range").slider("values", 1) + '<small>руб</small>');
 
 })
 ;
